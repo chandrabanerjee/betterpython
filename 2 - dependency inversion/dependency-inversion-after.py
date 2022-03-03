@@ -20,8 +20,8 @@ class LightBulb(Switchable):
 
 
 class Fan(Switchable):
-    def turn_on(self):
-        print("Fan: turned on...")
+    # def turn_on(self):
+    #     print("Fan: turned on...")
 
     def turn_off(self):
         print("Fan: turned off...")
@@ -41,8 +41,8 @@ class ElectricPowerSwitch:
             self.client.turn_on()
             self.on = True
 
-
-l = LightBulb()
+#s = Switchable() #can't create an object of this class.
+#l = LightBulb()
 f = Fan()
 switch = ElectricPowerSwitch(f)
 switch.press()
